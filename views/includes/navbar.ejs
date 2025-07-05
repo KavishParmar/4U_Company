@@ -1,0 +1,64 @@
+<nav id="navbar">
+    <div id="nav1">
+      <div id="logo-company">
+        <div class="logo">
+         <a href="http://localhost:8080/4U"> 
+           <img src= "images/c-logo/IMG_20240206_093339.jpg" alt="4 U" height="40px" />
+        </a> 
+        </div>
+        <div class="company-name">
+          <span>
+            <a href="http://localhost:8080/4U"
+              >4 U <br />Company
+            </a>
+          </span>
+        </div>
+      </div>
+      <div id="loc-search">
+
+        <label for="lctn">
+          <div class="location loc-search-area">
+            <input
+              id="lctn"
+              type="text"
+              placeholder="Your location..."
+              style="border: none; outline: none"
+            />
+            <i class="fa-solid fa-location-dot loc-icon" style="opacity: 0.5"></i>
+          </div>
+        </label>
+        <label for="srch">
+          <div class="search loc-search-area">
+            <input
+              id="srch"
+              type="text"
+              placeholder="Search..."
+              style="border: none; outline: none"
+            />
+            <i class="fa-solid fa-magnifying-glass" style="opacity: 0.5"> </i>
+          </div>
+        </label>
+
+      </div>
+      <div class="login-btn">
+        <!-- href="/login-signUp" -->
+        <a> <button>Login</button> </a>
+        <div id="loginPage" style="display: none;">
+          <div><br><br><br>
+            <h2>Enter your phone number</h2><br>
+            <p>we will send you a text with verification code</p> <br><br><br>
+            <form action="/4U/login-data" method="post">
+              <div class="input-group mb-3"> 
+                <input type="number" name="mobileNumber" placeholder="Enter your phone number" class="form-control" required>
+                <br><br>
+                <button class="btn btn-primary">Send OTP</button>
+              </div>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </nav>
